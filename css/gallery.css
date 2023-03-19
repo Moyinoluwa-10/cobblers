@@ -10,7 +10,7 @@
   --light-blue: #ebf0f3;
   --medium-blue: #3f00ff;
   --dark-blue: #12162d;
-  --dark-gray: #393939;
+  --medium-gray: #393939;
 }
 
 /* base styling */
@@ -40,7 +40,7 @@ li {
 
 .header {
   background-color: var(--white);
-  padding: 5px 50px;
+  padding: 10px 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -49,8 +49,8 @@ li {
 }
 
 .logo-container {
-  width: 194px;
-  height: 78px;
+  width: 180px;
+  height: 70px;
 }
 
 .logo-container img {
@@ -66,12 +66,17 @@ li {
 
 .nav-link {
   text-decoration: none;
-  color: var(--black);
-  font-size: 24px;
+  font-size: 18px;
   line-height: 36px;
   font-weight: 600;
   transition: all 0.3s ease-in-out;
   position: relative;
+  color: #2b2b2b99;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: var(--brown);
 }
 
 .nav-link::after {
@@ -88,11 +93,6 @@ li {
 
 .nav-link:hover::after {
   transform: scale(1);
-}
-
-.nav-link:hover {
-  color: var(--brown);
-  opacity: 0.8;
 }
 
 .nav-link.active {
