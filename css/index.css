@@ -108,6 +108,7 @@ li {
   width: 100%;
   color: var(--white);
   padding: 180px 50px;
+  height: 660px;
 }
 
 .hero .primary-heading {
@@ -130,9 +131,9 @@ li {
 
 .btn {
   font-family: inherit;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
-  line-height: 36px;
+  line-height: 34px;
   padding: 16px;
   background-color: var(--brown);
   color: var(--white);
@@ -140,11 +141,21 @@ li {
   outline: none;
   border-radius: 16px;
   text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--dark-gray);
 }
 
 .hero .btn {
   display: block;
   margin: 0 auto;
+}
+
+.hero .btn:hover {
+  border: 2px solid var(--white);
 }
 
 .skilled {
@@ -160,9 +171,8 @@ li {
 }
 
 .skilled .skilled-container {
-  /* display: grid; */
-  /* grid-template-columns: repeat(3, 1fr); */
   display: flex;
+  justify-content: space-between;
   gap: 20px;
 }
 
@@ -198,23 +208,44 @@ li {
 
 .skilled .image-box-1 {
   grid-area: skill-1;
+  width: 310px;
+  height: 465px;
 }
 
 .skilled .image-box-2 {
   grid-area: skill-2;
+  width: 420px;
+  height: 224px;
 }
 
 .skilled .image-box-3 {
   grid-area: skill-3;
+  width: 420px;
+  height: 224px;
+}
+
+.skilled .image-box-1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.skilled .image-box-2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.skilled .image-box-3 img {
+  width: 100%;
+  height: 100%;
 }
 
 .collection {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../assets/images/collector-bg.png);
   background-size: cover;
   width: 100%;
   color: var(--white);
-  padding: 84px 50px 120px;
+  padding: 80px 50px 120px;
 }
 
 .collection .primary-heading {
@@ -222,7 +253,7 @@ li {
   font-weight: 700;
   line-height: 96px;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .collection .paragraph {
@@ -308,8 +339,8 @@ li {
 }
 
 .suscribe {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url(../assets/images/suscribe-bg.png);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/images/suscribe-bg.png) no-repeat;
   background-size: cover;
   width: 100%;
   color: var(--white);
@@ -341,12 +372,12 @@ li {
   border-radius: 16px 0 0 16px;
   border: none;
   font-family: inherit;
-  font-size: 19px;
+  font-size: 17px;
 }
 
 .suscribe .input::placeholder {
   font-family: inherit;
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 400;
   line-height: 24px;
   color: #1d1d1d;
@@ -361,15 +392,20 @@ li {
   height: 56px;
   padding: 10px;
   border-radius: 0 16px 16px 0;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
-  line-height: 36px;
+  line-height: 30px;
   background: var(--brown);
   color: var(--white);
   border: none;
   outline: none;
   font-family: inherit;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.suscribe .btn-submit:hover {
+  background: var(--dark-gray);
 }
 
 /* footer styling  */
