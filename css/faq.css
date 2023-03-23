@@ -229,6 +229,7 @@ li {
 .custom .custom-form {
   display: block;
   width: 450px;
+  max-width: 100%;
 }
 
 .custom .form-group {
@@ -294,6 +295,7 @@ li {
 }
 
 .custom .image-container {
+  max-width: 100%;
   width: 700px;
   height: 400px;
 }
@@ -358,4 +360,42 @@ li {
 .footer-link:hover {
   color: var(--light-blue);
   opacity: 0.8;
+}
+
+/* RESPONSIVENESS */
+
+@media screen and (max-width: 1024px) {
+  .works {
+    grid-template-columns: 1fr;
+  }
+
+  .works .image-container {
+    height: auto;
+  }
+
+  .works .image-container:last-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .faq .heading-primary {
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 20px;
+  }
+
+  .faq .paragraph {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+
+  .custom .custom-container {
+    flex-direction: column-reverse;
+  }
+
+  .custom .image-container {
+    height: 200px;
+  }
 }
