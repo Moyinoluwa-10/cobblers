@@ -236,6 +236,123 @@ li {
 
 /*footer section*/
 
+/* container grid section*/
+
+.container {
+  display: grid;
+  grid-template-columns: 420px 420px 420px;
+  grid-template-rows: 420px 420px 420px;
+  justify-content: center;
+  text-align: start;
+  margin-top: 79.5px;
+  column-gap: 20px;
+}
+
+.container h2 {
+  position: relative;
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 51px;
+  color: #ffffff;
+  left: 78px;
+  top: 53px;
+
+  width: 300px;
+  height: 51px;
+}
+
+.container p {
+  position: relative;
+  font-family: poppins;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  top: 90px;
+  left: 67px;
+
+  width: 300px;
+  height: 72px;
+}
+
+.container #btn {
+  position: relative;
+  display: flex;
+  font-family: poppins;
+  font-weight: 400;
+  font-size: 14px;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 12px;
+
+  top: 200.87px;
+  left: 154.87px;
+}
+
+#mobile-c,
+.bt-1 {
+  background-color: var(--medium-gray);
+  color: #fff;
+}
+
+#custom-d,
+.bt-2 {
+  background-color: var(--dark-blue);
+  color: #fff;
+}
+
+#shoe-r,
+.bt-3 {
+  background-color: var(--brown);
+  color: #fff;
+}
+
+#donation-r,
+.bt-4 {
+  background-color: var(--dark-blue);
+  color: #fff;
+}
+
+#shoe-l,
+.bt-5 {
+  background-color: var(--medium-gray);
+  color: #fff;
+}
+
+#rental,
+.bt-6 {
+  background-color: var(--brown);
+  color: #fff;
+}
+
+#btc {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 79px;
+  margin-bottom: 51.2px;
+}
+
+.btc-1 {
+  width: 264px;
+  height: 67.74px;
+  font-family: poppins;
+  font-weight: 600px;
+  font-size: 24px;
+  background-color: var(--brown);
+  border: 1px solid white;
+  border-radius: 16px;
+  color: #f8f0f0;
+}
+
+/* footer section */
+
 .footer {
   background-color: var(--dark-gray);
   padding: 70px 50px 90px;
