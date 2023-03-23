@@ -99,6 +99,103 @@ li {
   color: var(--medium-blue);
 }
 
+.first-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.contactpageimg{
+  margin-top: 30px;
+  width: 100%;
+  height:100%
+}
+.Div-form{
+  padding: 8px;
+}
+.contact-right{
+  flex-basis: 30%;
+  padding:40px;
+}
+.contact-left{
+  /* flex-basis: 50%; */
+  padding:40px;
+}
+.Div-form input{
+  background: #FFFFFF;
+  border: 1px solid #E2E1E5;
+  border-radius: 5px;
+  padding: 10px 55px 10px 15px;
+}
+.contact-left .Div-form input{
+  background: #FFFFFF;
+  border: 1px solid #E2E1E5;
+  border-radius: 5px;
+  padding: 10px 65px 10px 15px;
+}
+.Div-form label{
+  font-size: 11px;
+  font-weight: 600;
+}
+.button{
+  padding: 10px 5px;
+}
+#submit-button{
+  width: 100px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #4A2C2A;
+  color: #fff;
+  text-align: center;
+  line-height: 0.5;
+  font-size: 15px;
+  font-weight: 600;
+}
+.second-container{
+  width: 100%;
+  height: 100%;
+}
+.location-img{
+  display: flex;
+}
+.second-container img{
+  width: 40px;
+  margin-left: 40px;
+}
+.second-container h1{
+  padding-left: 20px;
+}
+.map{
+  padding:10px 30px 15px 30px ;
+}
+iframe{
+  width: 100%;
+  height: 500px;
+}
+.address{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+.address p{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 42px;
+  color: #1D1D1D;
+}
+.directionbtn{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+.directionbtn #submit-button{
+  text-align: center;
+  padding: 10px;
+  color: #E2E1E5;
+}
 .footer {
   background-color: var(--dark-gray);
   padding: 70px 50px 90px;
@@ -155,3 +252,4 @@ li {
   color: var(--light-blue);
   opacity: 0.8;
 }
+  
