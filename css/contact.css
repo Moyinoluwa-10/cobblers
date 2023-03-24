@@ -140,16 +140,22 @@ li {
   padding: 10px 5px;
 }
 #submit-button{
-  width: 100px;
-  height: 40px;
-  padding: 10px;
+  width: 90px;
+  /* height: 40px; */
+  padding: 15px;
   border-radius: 8px;
   background-color: #4A2C2A;
   color: #fff;
   text-align: center;
   line-height: 0.5;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
+}
+#Pick-up{
+  width: 11px;
+}
+#Delivery{
+  width: 11px;
 }
 .second-container{
   width: 100%;
@@ -189,12 +195,13 @@ iframe{
 .directionbtn{
   display: flex;
   justify-content: center;
-  padding-bottom: 40px;
-}
-.directionbtn #submit-button{
+  align-items: center;
+  padding-bottom: 40px; 
+} 
+ #submit-button{
   text-align: center;
-  padding: 10px;
   color: #E2E1E5;
+  width: 175px;
 }
 .footer {
   background-color: var(--dark-gray);
