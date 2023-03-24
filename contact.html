@@ -37,85 +37,164 @@
         </ul>
       </nav>
     </header>
-    <div class="first-container">
-      <div class="contact-right">
-        <form action="#" id="contact-form" class="form-label">
-    <div class="Div-form">
-      <label for="name" id="name-label">Name</label>
-      <input type="text" id="name" placeholder="Name" name="name" required>
-    </div>
-    <div class="Div-form">
-      <label for="email" id="email-label">Email Address</label>
-      <input type="text" id="email" placeholder="Email Address" name="email" required>
-    </div>
-    <div class="Div-form">
-      <label for="number" id="number-label">Phone Number</label>
-      <input type="number" id="number" placeholder="phone Number" name="number"required>
-    </div>
-    <div class="Div-form">
-      <label for="shoetype" id="shoetype-label">Type Of Shoe</label>
-      <input type="text" id="shoetype" placeholder="Type of shoe" name="shoetype"required>
-    </div>
-    <div class="Div-form">
-      <label>
-        <input type="checkbox" id="Delivery" name="answer" value="Delivery" /> Delivery
-      </label> 
-    </div>
-    <div class="button">
-      <button type="button" id="submit-button">SUBMIT</button>
-    </div>
-  </div>
-  <div class="contact-left">
-    <div class="Div-form">
-      <label for="issue">Specific Issues</label>
-      <input type="text" id="issue" placeholder="Specific issues" name="issue" required>
-    </div>
-    <div class="Div-form">
-      <label for="repair">Any Previous Repair On Shoe Or Accessary</label>
-      <input type="text" id="repair" placeholder="Any previous repairon shoe or accessary" name="repair" required>
-    </div>
-    <div class="Div-form">
-      <label for="deadline" class="repair">Deadline For Repair Or Service</label>
-      <input type="text" id="deadline" placeholder="Deadline for repair or service" name="deadline" required>
-    </div>
-    <div class="Div-form">
-      <label for="payment">Preffered Payment Method</label>
-      <input type="text" id="payment" placeholder="preffered Payment method" name="deadline" required>
-    </div>
-    <div class="Div-form">
-      <label>
-        <input type="checkbox" id="Pick-up" name="answer" value="Pick-up" /> Pick Up
-      </label> 
-    </div>
-  </div>
-</form>
-  <div class="contactpageimg">
-    <img src="./assets/images/contactpageimg.png" alt="contact page image" />
-  </div>
-  </div>
-  <div class="second-container">
-    <div class="location-img">
-        <img src="./assets/images/map-pin.png" alt="cobblers-location">
-        <h1>Find Us</h1>
-    </div>
-    <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126845.96885286162!2d3.2934878457525016!3d6.529701169167635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9228fa2a3999%3A0xd7a8324bddbba1f0!2sIkeja%2C%20Lagos%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1679351242213!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div class="address">
-      <p>
-        No 37, Mobolaji johnson Avenue,<br> 
-        Alausa Ikeja. Lagos
-      </p>
-      <div class="number">
-        <p>(+234) 810 3234 443</p>
-      <p>customercare@cobblers.com</p>
-      </div>
-      </div>  
-  </div>
 
-  <div class="directionbtn">
-    <button type="button" id="submit-button">Get Direction Now</button>
-  </div>
+    <div class="first-container">
+      <form action="#" id="contact-form" class="form">
+        <div class="contact-right">
+          <div class="Div-form">
+            <label for="name" id="name-label">Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Name"
+              name="name"
+              required
+            />
+          </div>
+          <div class="Div-form">
+            <label for="email" id="email-label">Email address</label>
+            <input
+              type="text"
+              id="email"
+              placeholder="Email address"
+              name="email"
+              required
+            />
+          </div>
+          <div class="Div-form">
+            <label for="number" id="number-label">Phone number</label>
+            <input
+              type="tel"
+              id="number"
+              placeholder="Phone number"
+              name="number"
+              required
+            />
+          </div>
+          <div class="Div-form">
+            <label for="shoetype" id="shoetype-label">Type Of shoe</label>
+            <input
+              type="text"
+              id="shoetype"
+              placeholder="Type of shoe"
+              name="shoetype"
+              required
+            />
+          </div>
+          <div class="Div-form form-flex">
+            <input
+              type="checkbox"
+              id="delivery"
+              name="answer"
+              value="Delivery"
+              class="input-checkbox"
+            />
+            <label for="delivery" class="label-checkbox"> Delivery </label>
+          </div>
+
+          <div class="button">
+            <button type="button" id="submit-button" class="submit-button">
+              SUBMIT
+            </button>
+          </div>
+        </div>
+
+        <div class="contact-left">
+          <div class="Div-form">
+            <label for="issue">Specific issues</label>
+            <input
+              type="text"
+              id="issue"
+              placeholder="Specific issues"
+              name="issue"
+              required
+            />
+          </div>
+          <div class="Div-form">
+            <label for="repair">Any previous repair on shoe or accessory</label>
+            <input
+              type="text"
+              id="repair"
+              placeholder="Any previous repair on shoe or accessory"
+              name="repair"
+              required
+            />
+          </div>
+          <div class="Div-form">
+            <label for="deadline" class="repair"
+              >Deadline for repair or service</label
+            >
+            <input
+              type="text"
+              id="deadline"
+              placeholder="Deadline for repair or service"
+              name="deadline"
+              required
+            />
+          </div>
+          <div class="Div-form">
+            <label for="payment">Preffered payment method</label>
+            <input
+              type="text"
+              id="payment"
+              placeholder="Preffered payment method"
+              name="deadline"
+              required
+            />
+          </div>
+          <div class="Div-form form-flex">
+            <input
+              type="checkbox"
+              id="pick-up"
+              name="answer"
+              class="input-checkbox"
+            />
+            <label for="pick-up" class="label-checkbox">Pick Up</label>
+          </div>
+        </div>
+      </form>
+
+      <div class="contactpageimg">
+        <img
+          src="./assets/images/contactpageimg.png"
+          alt="contact page image"
+        />
+      </div>
+    </div>
+
+    <div class="second-container">
+      <div class="location-img">
+        <img src="./assets/images/map-pin.png" alt="cobblers-location" />
+        <h1>Find Us</h1>
+      </div>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126845.96885286162!2d3.2934878457525016!3d6.529701169167635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b9228fa2a3999%3A0xd7a8324bddbba1f0!2sIkeja%2C%20Lagos%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1679351242213!5m2!1sen!2sus"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="address">
+        <p>
+          No 37, Mobolaji johnson Avenue,<br />
+          Alausa Ikeja, Lagos.
+        </p>
+        <div class="number">
+          <p>(+234) 810 3234 443</p>
+          <p>customercare@cobblers.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="directionbtn">
+      <button type="button" id="submit-button2" class="submit-button">
+        Get Direction Now
+      </button>
+    </div>
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-box">
