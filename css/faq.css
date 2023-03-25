@@ -180,22 +180,22 @@ li {
   width: 100%;
   max-width: 840px;
   max-height: 82px;
-  transition: all ease-in-out;
-  transition-duration: 0.5s;
+  transition: all 1s ease;
   overflow: hidden;
 }
 
 .faq .faq-cont.active {
-  max-height: 400px;
+  max-height: 500px;
 }
 
 .faq .faq-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
   padding-right: 20px;
   cursor: pointer;
-  transition: all 1s ease-in-out;
+  transition: all 1s ease;
 }
 
 .faq .faq-box.active .top-text {
@@ -220,10 +220,15 @@ li {
   transition: all 1s ease-in-out;
   padding-left: 20px;
   padding-right: 40px;
+  display: none;
 }
 
 .faq .bottom-text span {
   font-weight: 700;
+}
+
+.faq .bottom-text.active {
+  display: block;
 }
 
 .faq .icon {
@@ -313,7 +318,16 @@ li {
 }
 
 .custom .btn-submit:hover {
-  background: var(--dark-gray);
+  background-color: white;
+  border: 1px solid var(--brown);
+  color: var(--brown);
+  transform: translateY(-3px);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.custom .btn-submit:active {
+  transform: scale(0.98) translateY(-1px);
+  box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .custom .btn-submit:active {
@@ -435,27 +449,69 @@ li {
     display: block;
   }
 
-  .footer-container {
-    flex-wrap: wrap;
-    gap: 70px;
-  }
-
   .works {
     grid-template-columns: 1fr;
   }
 
   .works .image-container {
     height: auto;
+    max-height: calc(100vh - 78px);
   }
 
   .works .image-container:last-child {
     display: none;
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+    gap: 70px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .header {
     padding: 10px 30px;
+  }
+
+  .faq {
+    padding: 40px 30px 80px;
+  }
+
+  .faq .heading-primary {
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 20px;
+  }
+
+  .faq .paragraph {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+
+  .faq .faq-cont {
+    padding: 20px 16px;
+    max-height: 100px;
+  }
+
+  .custom {
+    padding: 0 30px 70px;
+  }
+
+  .custom .heading-secondary {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 50px;
+  }
+
+  .custom .custom-container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .custom .image-container {
+    max-width: 450px;
+    height: 200px;
   }
 
   .footer {
@@ -497,26 +553,6 @@ li {
     line-height: 24px;
     margin-bottom: 7px;
   }
-
-  .faq .heading-primary {
-    font-size: 30px;
-    line-height: 42px;
-    margin-bottom: 20px;
-  }
-
-  .faq .paragraph {
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 30px;
-  }
-
-  .custom .custom-container {
-    flex-direction: column-reverse;
-  }
-
-  .custom .image-container {
-    height: 200px;
-  }
 }
 
 @media screen and (max-width: 500px) {
@@ -527,6 +563,54 @@ li {
   .logo-container {
     width: 100px;
     height: 40px;
+  }
+
+  .faq {
+    padding: 40px 20px 80px;
+  }
+
+  .faq .heading-primary {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .faq .paragraph {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .faq .faq-container {
+    gap: 30px;
+  }
+
+  .faq .faq-cont {
+    padding: 15px 16px;
+    gap: 20px;
+    max-height: 120px;
+  }
+
+  .faq .faq-box {
+    padding-right: unset;
+  }
+
+  .faq .top-text {
+    font-size: 15px;
+  }
+
+  .faq .bottom-text {
+    font-size: 15px;
+    padding-left: 10px;
+    display: none;
+  }
+
+  .custom {
+    padding: 0 20px 70px;
+  }
+
+  .custom .btn-submit {
+    font-size: 16px;
+    line-height: 30px;
+    padding: 8px 25px;
   }
 
   .footer {
