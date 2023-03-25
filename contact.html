@@ -49,126 +49,140 @@
 
     <div class="first-container">
       <form action="#" id="contact-form" class="form">
-        <div class="contact-right">
-          <div class="Div-form">
-            <label for="name" id="name-label">Name</label>
-            <input
-              type="text"
-              id="name"
-              placeholder="Name"
-              name="name"
-              required
-            />
-          </div>
-          <div class="Div-form">
-            <label for="email" id="email-label">Email address</label>
-            <input
-              type="text"
-              id="email"
-              placeholder="Email address"
-              name="email"
-              required
-            />
-          </div>
-          <div class="Div-form">
-            <label for="number" id="number-label">Phone number</label>
-            <input
-              type="tel"
-              id="number"
-              placeholder="Phone number"
-              name="number"
-              required
-            />
-          </div>
-          <div class="Div-form">
-            <label for="shoetype" id="shoetype-label">Type Of shoe</label>
-            <input
-              type="text"
-              id="shoetype"
-              placeholder="Type of shoe"
-              name="shoetype"
-              required
-            />
-          </div>
-          <div class="Div-form form-flex">
-            <input
-              type="checkbox"
-              id="delivery"
-              name="answer"
-              value="Delivery"
-              class="input-checkbox"
-            />
-            <label for="delivery" class="label-checkbox" id="deliver"> Delivery </label>
+        <div class="form-group">
+          <div class="contact-right">
+            <div class="Div-form">
+              <label for="name" id="name-label">Name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Name"
+                name="name"
+                required
+              />
+            </div>
+
+            <div class="Div-form">
+              <label for="email" id="email-label">Email address</label>
+              <input
+                type="text"
+                id="email"
+                placeholder="Email address"
+                name="email"
+                required
+              />
+            </div>
+
+            <div class="Div-form">
+              <label for="number" id="number-label">Phone number</label>
+              <input
+                type="tel"
+                id="number"
+                placeholder="Phone number"
+                name="number"
+                required
+              />
+            </div>
+
+            <div class="Div-form">
+              <label for="shoetype" id="shoetype-label">Type of shoe</label>
+              <input
+                type="text"
+                id="shoetype"
+                placeholder="Type of shoe"
+                name="shoetype"
+                required
+              />
+            </div>
+
+            <div class="Div-form form-flex delivery--1">
+              <input
+                type="checkbox"
+                id="delivery"
+                name="answer"
+                value="Delivery"
+                class="input-checkbox"
+              />
+              <label for="delivery" class="label-checkbox" id="deliver">
+                Delivery
+              </label>
+            </div>
           </div>
 
-          <div class="button">
-            <button type="button" id="submit-button" class="submit-button">
-              SUBMIT
-            </button>
+          <div class="contact-left">
+            <div class="Div-form">
+              <label for="issue">Specific issues</label>
+              <input
+                type="text"
+                id="issue"
+                placeholder="Specific issues"
+                name="issue"
+                required
+              />
+            </div>
+            <div class="Div-form">
+              <label for="repair"
+                >Any previous repair on shoe or accessory</label
+              >
+              <input
+                type="text"
+                id="repair"
+                placeholder="Any previous repair on shoe or accessory"
+                name="repair"
+                required
+              />
+            </div>
+            <div class="Div-form">
+              <label for="deadline" class="repair"
+                >Deadline for repair or service</label
+              >
+              <input
+                type="text"
+                id="deadline"
+                placeholder="Deadline for repair or service"
+                name="deadline"
+                required
+              />
+            </div>
+            <div class="Div-form">
+              <label for="payment">Preffered payment method</label>
+              <input
+                type="text"
+                id="payment"
+                placeholder="Preffered payment method"
+                name="deadline"
+                required
+              />
+            </div>
+            <div class="Div-form form-flex">
+              <input
+                type="checkbox"
+                id="pick-up"
+                name="answer"
+                class="input-checkbox"
+              />
+              <label for="pick-up" class="label-checkbox">Pick Up</label>
+            </div>
+
+            <div class="Div-form form-flex delivery--2">
+              <input
+                type="checkbox"
+                id="delivery"
+                name="answer"
+                value="Delivery"
+                class="input-checkbox"
+              />
+              <label for="delivery" class="label-checkbox" id="deliver">
+                Delivery
+              </label>
+            </div>
           </div>
         </div>
 
-        <div class="contact-left">
-          <div class="Div-form">
-            <label for="issue">Specific issues</label>
-            <input
-              type="text"
-              id="issue"
-              placeholder="Specific issues"
-              name="issue"
-              required
-            />
-          </div>
-          <div class="Div-form">
-            <label for="repair">Any previous repair on shoe or accessory</label>
-            <input
-              type="text"
-              id="repair"
-              placeholder="Any previous repair on shoe or accessory"
-              name="repair"
-              required
-            />
-          </div>
-          <div class="Div-form">
-            <label for="deadline" class="repair"
-              >Deadline for repair or service</label
-            >
-            <input
-              type="text"
-              id="deadline"
-              placeholder="Deadline for repair or service"
-              name="deadline"
-              required
-            />
-          </div>
-          <div class="Div-form">
-            <label for="payment">Preffered payment method</label>
-            <input
-              type="text"
-              id="payment"
-              placeholder="Preffered payment method"
-              name="deadline"
-              required
-            />
-          </div>
-          <div class="Div-form form-flex">
-            <input
-              type="checkbox"
-              id="pick-up"
-              name="answer"
-              class="input-checkbox"
-            />
-            <label for="pick-up" class="label-checkbox">Pick Up</label>
-          </div>
-          <div class="Div-form form-flex">
-            <input
-              type="checkbox"
-              id="pick-up"
-              name="answer"
-              class="input-checkbox"
-            />
-            <label for="pick-up" class="label-checkbox">Delivery</label>
-          </div>
+        <div class="button">
+          <button type="button" id="submit-button" class="submit-button">
+            SUBMIT
+          </button>
         </div>
       </form>
 
@@ -196,6 +210,7 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
+
       <div class="address">
         <p>
           No 37, Mobolaji johnson Avenue,<br />
@@ -206,12 +221,12 @@
           <p>customercare@cobblers.com</p>
         </div>
       </div>
-    </div>
 
-    <div class="directionbtn1">
-      <button type="button" id="submit-button2" class="submit-button1">
-        Get Direction Now
-      </button>
+      <div class="directionbtn">
+        <button type="button" id="submit-button2" class="submit-button">
+          Get Direction Now
+        </button>
+      </div>
     </div>
 
     <footer class="footer">
