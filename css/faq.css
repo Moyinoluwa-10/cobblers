@@ -330,10 +330,6 @@ li {
   box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.custom .btn-submit:active {
-  transform: scale(0.95);
-}
-
 .custom .image-container {
   max-width: 100%;
   width: 700px;
