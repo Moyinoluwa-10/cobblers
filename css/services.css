@@ -447,63 +447,85 @@ li {
   }
 
   .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(12, 370px);
-    grid-template-areas: "area-1" "area-2" "area-3" "area-4" "area-5"
-                          "area-6" "area-7" "area-8" "area-9" "area-10"
-                         "area-11" "area-12";
-
+    display: flex;
+    flex-direction: column;
     
-
   }
 
   .cont-area1 {
-    grid-area: area-4;
+    order: 4;
+    flex-basis: 343px;
+    margin-bottom: 24px;
+    
   }
 
   .cont-area2 {
-    grid-area: area-3;
-    gap: 20px;
+    order: 3;
+    flex-basis: 343px;
+    height: 343px;
+    
+  
   }
 
   .cont-area3 {
-    grid-area: area-2;
+    order: 2;
+    flex-basis: 343px;
+    margin-bottom: 24px;
   }
 
   .cont-area4 {
-    grid-area: area-11;
+    order: 11;
+    flex-basis: 343px;
+    height: 343px;
   }
 
   .cont-area5 {
-    grid-area: area-12;
+    order: 12;
+    flex-basis: 343px;
+    margin-bottom: 24px;
   }
 
   .cont-area6 {
-    grid-area: area-1;
+    order: 1;
+    flex-basis: 343px;
+    height: 343px;
   }
 
   .cont-area7 {
-    grid-area: area-10;
+    order: 10;
+    flex-basis: 343px;
+    margin-bottom: 24px;
   }
 
   .cont-area8 {
-    grid-area: area-9;
+    order: 9;
+    flex-basis: 343px;
+    height: 343px;
+    
   }
 
   .cont-area9 {
-    grid-area: area-8;
+    order: 8;
+    flex-basis: 343px;
+    margin-bottom: 24px;
   }
 
   .cont-area10 {
-    grid-area: area-5;
+    order: 5;
+    flex-basis: 343px;
+    height: 343px;
   }
 
   .cont-area11 {
-    grid-area: area-6;
+    order: 6;
+    flex-basis: 343px;
+    margin-bottom: 24px;
   }
 
   .cont-area12 {
-    grid-area: area-7;
+    order: 7;
+    flex-basis: 343px;
+    height: 343px;
   }
 
 }
